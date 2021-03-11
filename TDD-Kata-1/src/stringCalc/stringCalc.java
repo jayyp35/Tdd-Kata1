@@ -7,7 +7,7 @@ public class stringCalc {
 		if(numbers.isEmpty())
 			return 0;
 		else {
-			String[] nums = numbers.split(",");
+			String[] nums = numbers.split(",|\n");
 			
 			int sum = 0;
 			
