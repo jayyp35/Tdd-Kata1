@@ -2,8 +2,11 @@ package stringCalc;
 import java.util.*;
 
 public class stringCalc {
+	public static ArrayList<Integer> negatives = new ArrayList<>();
 	
 	public static int Add(String numbers) {
+		negatives.clear();
+		
 		if(numbers.isEmpty())
 			return 0;
 		else if (numbers.startsWith("//")) {
@@ -16,8 +19,17 @@ public class stringCalc {
 			int sum = 0;
 			
 			for(int i=0;i<nums.length;i++) {
-				sum += Integer.parseInt(nums[i]);
+				int num = Integer.parseInt(nums[i]);
+				if(num < 0) {
+					negatives.add(num);
+				}else {
+					sum += num;
+				}
+					
 			}
+			
+			if(negatives.size()>0)
+				return -1;
 			
 			return sum;
 			
@@ -28,8 +40,17 @@ public class stringCalc {
 			int sum = 0;
 			
 			for(int i=0;i<nums.length;i++) {
-				sum += Integer.parseInt(nums[i]);
+				int num = Integer.parseInt(nums[i]);
+				if(num < 0) {
+					negatives.add(num);
+				}else {
+					sum += num;
+				}
+					
 			}
+			
+			if(negatives.size()>0)
+				return -1;
 			
 			return sum;
 		}
