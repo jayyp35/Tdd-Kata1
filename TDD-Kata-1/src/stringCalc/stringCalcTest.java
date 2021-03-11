@@ -7,8 +7,8 @@ import org.junit.jupiter.api.Test;
 class stringCalcTest {
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void checkEmpty() {
+		assertEquals(0,stringCalc.Add(""));
 	}
 
 }
