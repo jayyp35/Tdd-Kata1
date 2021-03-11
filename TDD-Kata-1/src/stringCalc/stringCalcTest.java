@@ -10,5 +10,9 @@ class stringCalcTest {
 	void checkEmpty() {
 		assertEquals(0,stringCalc.Add(""));
 	}
+	
+	void checksumoftwo() {
+		assertEquals(3,stringCalc.Add("1,2"));
+	}
 
 }
