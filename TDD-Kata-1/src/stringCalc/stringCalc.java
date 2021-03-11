@@ -23,6 +23,9 @@ public class stringCalc {
 				if(num < 0) {
 					negatives.add(num);
 				}else {
+					if(num>1000)
+						continue;
+					
 					sum += num;
 				}
 					
@@ -44,6 +47,9 @@ public class stringCalc {
 				if(num < 0) {
 					negatives.add(num);
 				}else {
+					if(num>1000)
+						continue;
+					
 					sum += num;
 				}
 					
