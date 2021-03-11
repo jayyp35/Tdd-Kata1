@@ -10,10 +10,13 @@ public class stringCalc {
 		if(numbers.isEmpty())
 			return 0;
 		else if (numbers.startsWith("//")) {
-			String delimiter = "\n";
-			delimiter = numbers.charAt(2) + "|" + delimiter;
+			int index = numbers.indexOf("\n");
+			String delim = numbers.substring(2,index);
 			
-			numbers = numbers.substring(4);
+			String delimiter = "\n";
+			delimiter = delim + "|" + delimiter;
+			
+			numbers = numbers.substring(index+1);
 			String[] nums = numbers.split(delimiter);
 			
 			int sum = 0;
