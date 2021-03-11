@@ -38,5 +38,9 @@ class stringCalcTest {
 		
 	}
 	
+	@Test
+	void greaterthan1000() {
+		assertEquals(3,stringCalc.Add("//;\n1;2;1001"));
+	}
 
 }
