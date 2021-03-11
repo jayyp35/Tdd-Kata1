@@ -31,5 +31,11 @@ class stringCalcTest {
 		assertEquals(3,stringCalc.Add("//;\n1;2"));
 	}
 	
+	@Test
+	void checknegative() {
+			assertEquals(-1,stringCalc.Add("//;\n1;2;-3"));
+			System.out.println(stringCalc.negatives);
+	}
+	
 
 }
