@@ -47,5 +47,12 @@ class stringCalcTest {
 	void longdelimiter() {
 		assertEquals(6,stringCalc.Add("//[###]\n1###2###3"));
 	}
+	
+	
+	@Test
+	void multipledelimiters() {
+		assertEquals(6,stringCalc.Add("//[#][%]\n1#2%3"));
+	}
+
 
 }
