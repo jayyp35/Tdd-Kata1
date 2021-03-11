@@ -26,5 +26,10 @@ class stringCalcTest {
 		assertEquals(6,stringCalc.Add("1\n2,3"));
 	}
 	
+	@Test
+	void supportdifferentdelimiters() {
+		assertEquals(3,stringCalc.Add("//;\n1;2"));
+	}
+	
 
 }
