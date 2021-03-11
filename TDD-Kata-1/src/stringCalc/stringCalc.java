@@ -11,12 +11,17 @@ public class stringCalc {
 			return 0;
 		else if (numbers.startsWith("//")) {
 			int index = numbers.indexOf("\n");
-			String delim = numbers.substring(2,index);
-			
 			String delimiter = "\n";
-			delimiter = delim + "|" + delimiter;
 			
-			numbers = numbers.substring(index+1);
+			if(index > 3) {
+				String delim = numbers.substring(3,index-1);
+				delimiter = delim + "|" + delimiter;
+				numbers = numbers.substring(index+1);
+			} else {
+				delimiter = numbers.charAt(2) + "|" + delimiter;
+				numbers = numbers.substring(4);
+			}
+			
 			String[] nums = numbers.split(delimiter);
 			
 			int sum = 0;
