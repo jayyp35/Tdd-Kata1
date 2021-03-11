@@ -14,9 +14,6 @@ public class stringCalc {
 			String delimiter = "\n";
 			
 			if(index > 3) {
-//				String delim = numbers.substring(3,index-1);
-//				delimiter = delim + "|" + delimiter;
-//				numbers = numbers.substring(index+1);
 				ArrayList<String> delimiters = new ArrayList<>();
 				String temp = "";
 				for(int i=2;i<index;i++) {
