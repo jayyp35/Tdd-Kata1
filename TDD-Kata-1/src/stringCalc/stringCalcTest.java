@@ -11,8 +11,16 @@ class stringCalcTest {
 		assertEquals(0,stringCalc.Add(""));
 	}
 	
+	@Test
 	void checksumoftwo() {
 		assertEquals(3,stringCalc.Add("1,2"));
 	}
+	
+	@Test
+	void checksumofmultiple() {
+		assertEquals(10,stringCalc.Add("1,2,3,4"));
+	}
+	
+	
 
 }
