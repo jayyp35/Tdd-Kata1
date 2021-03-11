@@ -21,6 +21,10 @@ class stringCalcTest {
 		assertEquals(10,stringCalc.Add("1,2,3,4"));
 	}
 	
+	@Test
+	void addnewlineasdelimiter() {
+		assertEquals(6,stringCalc.Add("1\n2,3"));
+	}
 	
 
 }
